@@ -5,29 +5,10 @@ namespace Chess
 {
     public abstract class Piece 
     {
-        protected Square Coords { get; set; }
-        protected string Color { get; set; }
+        public Square Coords { get; set; }
+        public string Color { get; set; }
         public int direction; // -1 || 1
         public Square[] Moves;
-        //protected Piece(string color, Square coords) 
-        //{
-        //    Color = color;
-        //    Coords = coords;
-        //}
-
-        //public Square GetCoords() {
-        //    return Coords;
-        //}
-
-        //public void SetCoords(Square s)
-        //{
-        //    Coords = s;
-        //}
-
-        //public void SetCoords(int x, int y) {
-        //    Coords.X = x;
-        //    Coords.Y = y;
-        //}
     }
 
     public class Pawn : Piece

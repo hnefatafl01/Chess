@@ -13,25 +13,10 @@ namespace Chess
             {
                 for (int j = 0; j < row.Length; j++)
                 {
-                    Console.WriteLine(BoardLayout[i, j]);
+                    //Console.WriteLine(BoardLayout[i, j]);
                     BoardLayout[i, j] = new Square(i, j);
                 }
             }
         }
     }
-
-    //public interface IMove
-    //{
-    //    void Move(Piece peice, Square destSq);
-    //}
-
-    //public class PawnMove : IMove 
-    //{
-    //    void Move(Pawn peice, Square destSq)
-    //    {
-    //        // special case if 1st move can move 2 space
-    //        peice.Coords.X = destSq.X;
-    //        peice.Coords.Y = destSq.Y;
-    //    }
-    //}
 }
