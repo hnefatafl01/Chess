@@ -14,7 +14,10 @@ namespace Chess
                 for (int j = 0; j < row.Length; j++)
                 {
                     //Console.WriteLine(BoardLayout[i, j]);
-                    BoardLayout[i, j] = new Square(i, j);
+                    BoardLayout[i, j] = new Square(i, j)
+                    {
+                        Location = column[i] + row[j]
+                    };
                 }
             }
         }

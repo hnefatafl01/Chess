@@ -5,6 +5,7 @@ namespace Chess
 {
     public interface IPieceFactory
     {
-       void SetPieces(String pieceName, Dictionary<string, Piece> p, Board b, int N);
+        void SetPieces(String pieceName, IDictionary<string, Piece> p, Board b, int N);
     }
+
 }
